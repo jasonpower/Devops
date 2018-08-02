@@ -1,0 +1,6 @@
+---
+
+- name: chmando a role docker
+  hosts: docker
+  roles:
+   - docker

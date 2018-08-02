@@ -1,0 +1,14 @@
+---
+
+- name: instalando a pacotes
+  hosts: all
+  tasks:
+   - name: instalando pacotes
+     apt:
+      name: "{{ item }}"
+     with_items:
+      - vim
+      - nano
+      - sl
+      - ccze
+      - dnsutils

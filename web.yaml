@@ -1,0 +1,6 @@
+---
+
+- name: chmando a role web
+  hosts: all
+  roles:
+   - web

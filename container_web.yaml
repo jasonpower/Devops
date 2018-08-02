@@ -1,0 +1,6 @@
+---
+
+- name: chmando a role container_web
+  hosts: docker
+  roles:
+   - container_web

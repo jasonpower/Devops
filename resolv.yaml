@@ -1,0 +1,8 @@
+---
+- name: Ajustando resolv.conf
+  hosts: all
+  tasks:
+   - name: ajustando resolv.conf
+     copy:
+      src: /etc/resolv.conf
+      dest: /etc/resolv.conf

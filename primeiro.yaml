@@ -1,0 +1,18 @@
+---
+- name: Minha primeira Playbook
+  hosts: all
+  tasks:
+   - name: Copiando um arquivo
+     copy:
+      src: devops
+      dest: /tmp/devops
+
+
+- name: Instalando pacotes SL em Debian
+  hosts: devops docker
+  tasks:
+   - name: Instalando pacote sl
+     apt:
+      name: sl
+      update_cache: yes
+      state: present
